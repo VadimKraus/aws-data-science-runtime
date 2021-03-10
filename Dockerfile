@@ -17,5 +17,5 @@ RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2
 WORKDIR /opt/ml/processing/analysis/
 
 # Install some common dependencies
-COPY analysis/batch-environment/requirements.txt ./
+COPY requirements.txt ./
 RUN pip3 install --no-cache-dir -r requirements.txt
